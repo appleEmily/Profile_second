@@ -23,23 +23,96 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="メンターのフィルだよ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rao-Au-QjF">
-                                <rect key="frame" x="16" y="380" width="382" height="20.5"/>
+                                <rect key="frame" x="16" y="422" width="382" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名前" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PxI-9R-Uxs">
+                                <rect key="frame" x="12" y="376" width="390" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="mXv-5v-qEG">
+                                <rect key="frame" x="16" y="752" width="382" height="78"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="ufj-Dd-0fk">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="31"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WgQ-FM-KXn">
+                                                <rect key="frame" x="0.0" y="0.0" width="183" height="31"/>
+                                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="名前"/>
+                                                <connections>
+                                                    <action selector="name:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pEN-GQ-dzN"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iBw-Ki-iGr">
+                                                <rect key="frame" x="199" y="0.0" width="183" height="31"/>
+                                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="スポーツ"/>
+                                                <connections>
+                                                    <action selector="sport:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Idd-mT-Pkx"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="PPW-ei-F5N">
+                                        <rect key="frame" x="0.0" y="47" width="382" height="31"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KeK-U9-ReQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="183" height="31"/>
+                                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="好きな食べ物"/>
+                                                <connections>
+                                                    <action selector="food:" destination="BYZ-38-t0r" eventType="touchUpInside" id="flj-JO-t4e"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UAn-9D-52H">
+                                                <rect key="frame" x="199" y="0.0" width="183" height="31"/>
+                                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="趣味"/>
+                                                <connections>
+                                                    <action selector="hobby:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EJ0-qi-2QO"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="mXv-5v-qEG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="05y-2t-dgv"/>
+                            <constraint firstItem="Rao-Au-QjF" firstAttribute="top" secondItem="PxI-9R-Uxs" secondAttribute="bottom" constant="16" id="17D-L7-pjb"/>
                             <constraint firstItem="0R6-Kd-Q0g" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="26h-iJ-cAu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rao-Au-QjF" secondAttribute="trailing" constant="16" id="MrE-Kp-9Kc"/>
                             <constraint firstAttribute="trailing" secondItem="0R6-Kd-Q0g" secondAttribute="trailing" id="Nn9-ZW-944"/>
-                            <constraint firstItem="Rao-Au-QjF" firstAttribute="top" secondItem="0R6-Kd-Q0g" secondAttribute="bottom" constant="16" id="mMj-XY-LMo"/>
-                            <constraint firstItem="Rao-Au-QjF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="mkL-rL-gYU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mXv-5v-qEG" secondAttribute="bottom" constant="32" id="Rmj-ve-AUq"/>
+                            <constraint firstItem="Rao-Au-QjF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Yam-KJ-w9R"/>
+                            <constraint firstItem="PxI-9R-Uxs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="fgn-kS-jkp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PxI-9R-Uxs" secondAttribute="trailing" constant="12" id="jbb-Go-VI8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mXv-5v-qEG" secondAttribute="trailing" constant="16" id="mgY-vs-yKR"/>
                             <constraint firstItem="0R6-Kd-Q0g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oz6-wY-DnX"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rao-Au-QjF" secondAttribute="trailing" constant="16" id="zGK-3K-ggC"/>
+                            <constraint firstItem="PxI-9R-Uxs" firstAttribute="top" secondItem="0R6-Kd-Q0g" secondAttribute="bottom" constant="12" id="vxW-xB-Pto"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="image" destination="0R6-Kd-Q0g" id="8eC-bz-S4n"/>
+                        <outlet property="label" destination="Rao-Au-QjF" id="Rea-rc-ZPp"/>
+                        <outlet property="titleLabel" destination="PxI-9R-Uxs" id="tnd-mX-CRS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
